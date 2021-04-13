@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 
 # read file
-cap=cv.VideoCapture("test.mp4")
+cap=cv.VideoCapture("img/test.mp4")
 while(cap.isOpened()):
     ret,frame=cap.read()
     if not ret:
