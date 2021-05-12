@@ -6,7 +6,7 @@ cap=cv.VideoCapture("img/test.mp4")
 while(cap.isOpened()):
     ret,frame=cap.read()
     if not ret:
-        printf("can not read frame.")
+        print("can not read frame.")
         break
     gray=cv.cvtColor(frame,cv.COLOR_BGR2GRAY)
     cv.imshow("frame",gray)
